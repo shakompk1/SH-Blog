@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./singlePage.module.css";
 import Menu from "@/components/Menu";
 import Image from "next/image";
+import Comments from "@/components/Comments";
 
 const SinglePage = () => {
     return (
@@ -37,7 +38,38 @@ const SinglePage = () => {
                 </div>
             </div>
             <div className={styles.content}>
-                <div className={styles.post}></div>
+                <div className={styles.post}>
+                    <div className={styles.description}>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nihil delectus suscipit odio veritatis amet
+                            architecto velit! Ad nesciunt excepturi ipsa aut id
+                            officia neque, blanditiis aliquid, repellendus, nam
+                            obcaecati necessitatibus!
+                        </p>
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quibusdam, dolorum numquam aperiam assumenda
+                            non, natus dicta nihil, odio dolor quos ipsa
+                            doloribus dolores! Ratione nostrum officiis sunt
+                            magni, eos ex.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quibusdam, dolorum numquam aperiam assumenda
+                            non, natus dicta nihil, odio dolor quos ipsa
+                            doloribus dolores! Ratione nostrum officiis sunt
+                            magni, eos ex.
+                        </p>
+                    </div>
+                    <div className={styles.comment}>
+                        <Comments />
+                    </div>
+                </div>
                 <Menu />
             </div>
         </div>
